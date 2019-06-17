@@ -42,43 +42,43 @@ Door in het begin gebruik te maken van het brainstormen en nu user stories maken
 
 We hebben de volgende 8 requirements opgesteld. Dit doen we in de vorm van user stories:
 
-1.                            Als gebruiker wil ik een account aanmaken.
+1.                                Als gebruiker wil ik een account aanmaken.
 
 -Front-end: Hiervoor willen we in de header de optie om een account aan te maken. Dit moet kunnen via email, facebook of google. Om dit veilig te kunnen doen zullen we hiervoor gebruik maken van firebase
 -Backend : De gebruiker zal ook in de database moeten worden vastgelegd. Nadat de gebruiker is aangemaakt, zal deze worden opgeslagen in de database, het id van de de gebruiker zal het firebase token worden.
 
-2.                            Als gebruiker wil ik een product opvoeren om te kunnen ruilen.
+2.                                Als gebruiker wil ik een product opvoeren om te kunnen ruilen.
 
 -Front-end: hiervoor moeten we navigeren na een aparte scherm, waar we een product kunnen toevoegen. De gebruiker moet een titel, een korte beschrijving en een foto mee kunnen geven.
 
 - Backend: Deze gegevens moeten worden vastgelegd. Hiermee moet een duidelijk koppeling zijn tussen de gebruiker en het product.
 
-3.                            Als gebruiker wil ik een product ruilen.
+3.                                Als gebruiker wil ik een product ruilen.
 
 -Front-end: als een gebruiker een product ziet moet hij kunnen aangeven dat hij deze wil ruilen tegen een van zijn producten. Dit zal binnen het scherm moeten gebeuren waar de gebruiker op dat moment zich bevindt. De gebruiker waarvan wordt gevraagd om mee te ruilen, moet de ruil kunnen accepteren of afwijzen. Op basis van deze keuze moet de eerste gebruiker een melding zien.
 -Backend: De ruil moet worden vastgelegd met een status, open, geaccepteerd of afgewezen. Zodra de ruil wordt geaccepteerd moeten de producten van eigenaar gewisseld in de backend, daarnaast moet de status van ruil aangepast worden naar geaccepteerd. Als een ruil wordt afgewezen moet alleen de status van de ruil worden aangepast.
 
-4.                            Als gebruiker wil ik een product adverteren.
+4.                                Als gebruiker wil ik een product adverteren.
 
 -Front-end: geadverteerde producten moeten zichtbaar zijn op de welkomstpagina, Als een gebruiker zijn producten inziet, moeten hierbij de optie zijn om deze te kunnen adverteren.
 -Backend: De producten hebben een attribuut nodig om te kunnen zien of het huidige product geadverteerd word of niet.
 
-5.                            Als gebruiker wil ik een product in een categorie kunnen plaatsen.
+5.                                Als gebruiker wil ik een product in een categorie kunnen plaatsen.
 
 -Front-end: Tijdens het opvoeren wil ik een product een categorie willen meegeven.
 -Backend: De producten hebben een attribuut nodig om te kunnen zien in welke categorie dit product valt.
 
-6.                            Als gebruiker wil ik mijn ruil geschiedenis inzichtelijk willen maken.
+6.                                Als gebruiker wil ik mijn ruil geschiedenis inzichtelijk willen maken.
 
 -Front-end: Er moet een pagina komen waar de ruil geschiedenis van een gebruiker toonbaar is. Hier moet de gebruiker zien welke producten er zijn geruild.
 -Backend: Er moet een endpoint komen waarbij de ruil geschiedenis van een gebruiker kan worden opgevraagd. Er moet ook een endpoint komen die alle producten teruggeeft op basis van de ruil geschiedenis van een gebruiker. Dit zijn alle producten die een gebruiker heeft en had.
 
-7.                            Als gebruiker wil ik producten zoeken.
+7.                                Als gebruiker wil ik producten zoeken.
 
 - Front-end: Er moet een zoekbalk komen en een resultatenscherm. In het resultatenscherm hoeft alleen de foto en de titel van een product zichtbaar te zijn.
   Er moet kunnen worden gezocht op titel en categorie Backend: Er moet een verschillende endpoints komen die producten teruggeeft op de hierboven genoemde zoekcriteria.
 
-8.                            Als gebruiker wil ik producten van een andere gebruiker inzien.
+8.                                Als gebruiker wil ik producten van een andere gebruiker inzien.
 
 - Front-end: De gebruiker moet ook op gebruikers kunnen zoeken. Er moet dus een zoekcriterium bij komen.
   -Backend: Er moet een nieuw endpoint komen die producten teruggeeft op basis van het id van een gebruiker (dit is niet het id van een product).
@@ -237,9 +237,15 @@ We hebben feature tests gemaakt voor een item, deze testen beschrijven de versch
 
 ### Feature 2
 
-Voor de login feature hebben we niet alleen unit tests gemaakt, maar ook een integration test.
+Voor de login feature hebben we niet alleen unit tests gemaakt, maar ook integration testen op basis van BDD.
 
 ![Login feature](images/login-feature.png)
+
+![Login feature testen](images/login-feature2.png)
+
+Deze geven het volgende resultaat:
+
+![Test resultaat](images/features3.png)
 
 ### Reflectie tussen TDD vs BDD
 
